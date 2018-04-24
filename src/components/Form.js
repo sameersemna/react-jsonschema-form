@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { Form as AntForm } from "antd";
+import { Form as AntForm, Button } from "antd";
 import { default as DefaultErrorList } from "./ErrorList";
 import {
   getDefaultFormState,
@@ -223,9 +223,9 @@ export default class Form extends Component {
           children
         ) : (
           <p>
-            <button type="submit" className="btn btn-info">
+            <Button type="submit" className="btn btn-info">
               Submit
-            </button>
+            </Button>
           </p>
         )}
       </AntForm>
