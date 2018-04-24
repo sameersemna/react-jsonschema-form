@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import { Button } from "antd";
 import UnsupportedField from "./UnsupportedField";
 import {
   getWidget,
@@ -37,12 +37,12 @@ function ArrayFieldDescription({ DescriptionField, idSchema, description }) {
 function IconBtn(props) {
   const { type = "default", icon, className, ...otherProps } = props;
   return (
-    <button
+    <Button
       type="button"
       className={`btn btn-${type} ${className}`}
       {...otherProps}>
       <i className={`glyphicon glyphicon-${icon}`} />
-    </button>
+    </Button>
   );
 }
 
