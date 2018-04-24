@@ -37,10 +37,7 @@ function ArrayFieldDescription({ DescriptionField, idSchema, description }) {
 function IconBtn(props) {
   const { type = "default", icon, className, ...otherProps } = props;
   return (
-    <Button
-      type="button"
-      className={`btn btn-${type} ${className}`}
-      {...otherProps}>
+    <Button htmlType="button" type={type} className={className} {...otherProps}>
       <i className={`glyphicon glyphicon-${icon}`} />
     </Button>
   );

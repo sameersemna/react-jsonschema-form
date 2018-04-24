@@ -223,7 +223,7 @@ export default class Form extends Component {
           children
         ) : (
           <p>
-            <Button type="submit" className="btn btn-info">
+            <Button htmlType="submit" type="primary">
               Submit
             </Button>
           </p>
