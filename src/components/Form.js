@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-
+import { Form as AntForm } from "antd";
 import { default as DefaultErrorList } from "./ErrorList";
 import {
   getDefaultFormState,
@@ -193,7 +193,7 @@ export default class Form extends Component {
     const _SchemaField = registry.fields.SchemaField;
 
     return (
-      <form
+      <AntForm
         className={className ? className : "rjsf"}
         id={id}
         name={name}
@@ -228,7 +228,7 @@ export default class Form extends Component {
             </button>
           </p>
         )}
-      </form>
+      </AntForm>
     );
   }
 }

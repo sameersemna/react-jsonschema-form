@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-
+import { Select } from "antd";
 import { asNumber } from "../../utils";
 
 /**
@@ -54,7 +54,7 @@ function SelectWidget(props) {
   const { enumOptions, enumDisabled } = options;
   const emptyValue = multiple ? [] : "";
   return (
-    <select
+    <Select
       id={id}
       multiple={multiple}
       className="form-control"
@@ -89,7 +89,7 @@ function SelectWidget(props) {
           </option>
         );
       })}
-    </select>
+    </Select>
   );
 }
 
